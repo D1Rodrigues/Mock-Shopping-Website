@@ -1,0 +1,339 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <meta name = "viewport" content = "width-device-width, intial-scale = 1.0"> 
+        <meta charset = "UTF-8">
+       
+        <link rel="stylesheet" href = "Stylesheets/TermProj_1.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+         <script type = "text/javascript" src = "Stylesheets/style.js"></script> 
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        
+</head>
+<body> 
+    <header id ="title"> CPS530 Term Project</header>
+    <nav id="navBarCont">
+        <ul class ="ul1"> 
+            <li class ="li1"><a href ="TermProj_1.html" class = a1>Home</a></li>
+            <li class ="li1"><a href ="Installation.html" class = a1>Installation</a></li>
+            <li class ="li1"><a href ="#" class = a1>Designing a Page</a></li>
+            <li class ="li1"><a href ="https://finalprojec456.herokuapp.com/" class = a1>Demo Page</a></li>
+            <li class ="li1"><a href ="page-five.html" class = a1>Final Thoughts</a></li>
+            <li class ="li1"><a href ="references.html" class = a1>References</a></li>
+        </ul>
+    </nav>
+    <br> 
+    <br>
+   <div class ='slider'> 
+       <ul class = 'slides'>
+           <li> 
+           <img src = "Stylesheets/Pictures/plan.jpeg">
+           <div class="caption center-align">
+           <a href = "#Stage_1">  <h3 class="black-text" style ="font-family: Bebas;"> Stage 1: Planning </h3></a>
+            <h5 class="black-text">What do you want?</h5>
+          </div>
+           </li>
+
+           <li> 
+            <img src = "Stylesheets/Pictures/plan.jpeg">
+            <div class="caption center-align">
+                <a href = "#Stage_2"><h3 class="black-text" style ="font-family: Bebas;"> Stage 2: Getting Started </h3></a>
+                <h5 class="black-text">Where to begin</h5>
+           </div>
+            </li>
+            <li> 
+                <img src = "Stylesheets/Pictures/plan.jpeg">
+                <div class="caption center-align">
+                <a href = "#Stage_3"><h3 class="black-text" style ="font-family: Bebas;"> Stage 3: Back-end with Django </h3></a>
+                <h5 class="black-text">Getting Technical</h5>
+           </div>
+            </li>
+       </ul>
+   </div>
+   <article class="artsection2"> 
+    <p class ="Whatis" id = "Stage_1">Stage 1: Planning </p> 
+    <p class ="sub_Main"> Turning Imagination Into Reality </p> 
+    <hr class = "line"> 
+    <p class = "paragraph">You want to create a nice looking website but you have no idea how to start designing. This can seem very frustrating and impossible to start if you're just starting out in design.  
+        At first, you might want an extravagant website with every feature but you end up spending too much time organizing and fixing bugs. Even if you manage to fix all the 
+        features, it still takes time to create something that is eye-catching and pleasing. If you go into design blind without a plan then you'll end up spending more time scrapping ideas rather than putting 
+        them on screen. What could you have done differently? How can you create something decent within a reasonable amount of time?
+        That's a simple question, you plan.
+    </p>
+    <p class = "paragraph">
+        The idea of planning always seems simple but ends up being the most difficult part of the design process. What features you want to add, design and 
+        overall usability play into the design process. However, the first question you should be asking yourself before 
+        anything else is "How much time do I have?" and "How many people are on my team?". Usually this plays a huge factor into what 
+        to do first. If you are alone but have all the time in the world, then using plain CSS and Javascript will allow you to have more control and fluidity over 
+        every little aspect of your design. If you're on a team, consulting your team could and dividing up the work helps plenty, allowing you create with a clear vision with any option 
+        given the timeframe from CSS/Javascript to frameworks like bootstrap and react. However, if you are alone and do not have much time, then your best option is using a CSS/Javascript 
+        based framework. This is the best option for working alone while also having limited time. Frameworks allow for a single designer to create extravagent websites while also being able to save 
+        time on looks to focus on features.
+    </p>
+    <div id = "artImg4"> </div>
+    <p class = "paragraph">
+        Materialize is a CSS/Javascript based framework that has several components implemented and documented to help designers create eye-pleasing websites. 
+        For the rest of this tutorial we are going to be using the Materialize Framework to create a simple retail website. We are not going to be implementing. 
+        Django on the other hand is a python based framework for the backend of the website, allowing processing of many different information that might pass by onto the webpage.
+    </p>
+    <p class = "paragraph">
+        Before touching the computer, first  sketch out a rough idea of what you want the website to look like. This will help you creat a clear vision which you can 
+        refer to later. It doesn't have to be complex, just grab a piece of paper and a pen and create a crude drawing of what you want to transfer onto the website. 
+        For these sets of website, it looks like the following: 
+    </p>
+    <div class = "sScrollmenu"> 
+            <img src ="Stylesheets/Pictures/Frontend.png" style ="width:500px;">
+            <img src ="Stylesheets/Pictures/Frontend2.png" style ="width:500px;">
+    </div>
+    <p class = "paragraph">
+            Once you have that established, you want to choose 2 frameworks that you are best suited to. In this case we will be using Materialize for the frontend framework and Django for the backend.
+    </p>
+        
+
+    <p class ="Whatis" id="Stage_2">Stage 2: Getting Started </p> 
+    <p class ="sub_Main"> Where to begin </p> 
+    <hr class = "line"> 
+    <p class = "paragraph"> Before actually designing and changing everything, first you have to create a basic skeleton for the website you want to create. 
+            At this stage you also want to implement the frameworks that you will be using at the top. Along with the Materialize framework, you could also implement your
+            own style sheet just in case you want to set up your own style. In our case, we want to put a navigation bar at the top, so we should add what we want there. 
+            Using Materialize, we want to setup the navigation bar with the title or logo at the center of the bar. To do that you would write something like this: 
+    </p>
+    <img src ="Stylesheets/Pictures/Stage_1.png" id="imgBefore"> 
+    <p class = "paragraph"> There you will have a white navigation bark with a logo or Title in the center. Since we are creating a retail website,
+             it is important to keep your design sleek as well as simple. Next we'll be adding icons to the navigation bar which include: A menu icon, a shop button with an arrow beside it
+             , a search icon and a Cart/Checkout with a checkout icon beside it. You want to place 2 icons on each side of the title/logo to keep it even and so that attention is drawn to the 
+             entire navigation bar rather than one section. Icons are easy to implement due to being built into Materialize.
+             By the end we shoud have something similar to this:
+    </p>
+    <img src ="Stylesheets/Pictures/Stage_2.png" id="imgBefore"> 
+    <img src ="Stylesheets/Pictures/Stage_3.png" id="imgBefore"> 
+    <p class = "paragraph"> 
+            Now since the page is a little empty we should add a parallax picture to keep it from looking too empty. We can add that simply by using the implemented feature
+            that is included with Materialize. First create a div that has the class called "parallax-container" to create a container that will hold the parallax image.
+            After that container is created, we create another div class called "parallax" to set the background of that section as an image of our choice.
+    </p>
+    <img src ="Stylesheets/Pictures/Stage_4.png" id="imgBefore"> 
+    <p class = "paragraph"> 
+        There is a problem with this however, even though we created div classes, it is not enough to create a parallax effect. To achieve that we have to 
+        intialize it inside a script tag or an external javascript file. In this case we used the script tag to implement the parallax effect inside our website. We do that using the following 
+        script: 
+    </p>
+    <img src ="Stylesheets/Pictures/Stage_5.png" id="imgBefore"> 
+    <p class = "paragraph"> 
+    After this is created  you should have a parallax effect similar to this: 
+    </p>
+    <div id = "artImg5"> </div>
+    <p class = "paragraph"> 
+        And your page should look something similar to this: 
+    </p>
+    <img src ="Stylesheets/Pictures/Stage_6.png" id="imgBefore"> 
+    <p class = "paragraph"> 
+            Now let's add some pictures of items. These will not be connected to anything since this section is purely for aesthetic. To add practicality to it we would use
+            Django to connect each and every single picture to certain id tag, we'll explore that at the next step. To add the side scrolling pictures, you're gonna have to make your 
+            own css file since Materialize does not have this built in. It is simple to create: 
+    </p>
+    <img src ="Stylesheets/Pictures/Stage_7.png" id="imgBefore"> 
+    <p class = "paragraph"> 
+                After creating that in a seperate css file, you have to implement it similar to how we did it at the top. After creating that we need pictures. 
+                These pictures in this example are all the same size. Making sure to keep all the images inside the div class you created, you should be able to style 
+                the images to be the same size. In this example this is what my side scroll navigation bar looks like. 
+    </p>
+    <img src ="Stylesheets/Pictures/Stage_8.png" id="imgBefore"> 
+    <img src ="Stylesheets/Pictures/Stage_9.png" id="imgBefore"> 
+    <p class = "paragraph"> 
+                  You can check the purely design-heavy focus of this page <a href ="DesignExample.html"> here</a>. You can click on the 
+                  shopping cart this page to go to the back-end check out with Django. 
+                  Click <a href = "https://finalprojec456.herokuapp.com/">here</a> to go to the actual demo page with Django. 
+    </p>
+
+    <p class ="Whatis" id="Stage_3">Stage 3: Back-end with Django  </p> 
+    <p class ="sub_Main"> Getting Technical </p> 
+    <hr class = "line"> 
+    <p class = "paragraph"> 
+                    First before you begin you'll have to download and install Django which will be found in our installation tab. 
+                    After installation you're going to have to create a directory with Django. These will be created and there will be 
+                    several files that come included when first creating the directory which will be named here:
+    </p>
+    <img src ="Stylesheets/Pictures/pyfile.png" id="imgBefore"> 
+    <p class="paragraph"> 
+                    What we are trying to create is a checkout for a retail store. Out of all the files that were created when we created the directory 
+                    to run Django, the most important files we need to focus on is "urls.py" and for the other files its simple.
+                    For "__init__.py" we do not need to import anything and for "admin.py" all need to import is from django.contrib and we are importing 
+                    the "admin" routine. "test.py" all we need to import is from django.test and importing TestCase. This will be use for testing if needed. 
+    </p>
+    <p class="paragraph"> 
+                   We create a file called views.py and import several packages. First we import render and redirect from the django.shortcuts package. This 
+                   will allows us to move from page to page once the a certain actions are made. For our example: we want to print the information that the user provides,
+                   print it on the screen and then tell the custom when their delivery will come. Next we import HttpResponse from django.http which will process the data
+                   and transfer it from one webpage to another. Next we import the re module which is just for regular expressions. We also will import messages from the django.contribute 
+                   module. This will allow us to get some information from a page, transfer it to views.py  where it can be process. This also allows pop up to appear on screen 
+                   if any errors occur. Finally import datetime, which tells the time. For this you'll only need date and timedelta from the datetime module.
+    </p>
+    <img src ="Stylesheets/Pictures/Stage_10.png" id="imgBefore"> 
+    <p class ="paragraph"> 
+                    Next we should create a html file which will be overwritten by all the proceeding html files in the future. For this we only need the head 
+                    and body tags. This will include the stylesheets for Materialize which will be inherited by the other html files. This file is not as important as the other will be in the future.
+    </p>
+    <img src ="Stylesheets/Pictures/Stage_11.png" id="imgBefore"> 
+    <p class ="paragraph"> 
+                    Next let's focus on "urls.py". We're going to implement path from the django.urls module and this will allow other py files to move from 
+                    one page to another page when certain actions are taken. Now from the current directory that holds all the python files 
+                    we're going to import views.py into the urls.py. This will connect the 2 files and allows us to create paths for views while also keeping 
+                    views.py neater. We'll call this app "main" for now which will be important for the views.py in the future.
+    </p>
+    <p class ="paragraph"> 
+                    Next, let's focus on "urls.py". We're going to implement path from the django.urls module and this will allow other py files to move from 
+                    one page to another page when certain actions are taken. Now from the current directory that holds all the python files 
+                    we're going to import views.py into the urls.py. This will connect the 2 files and allows us to create paths for views while also keeping 
+                    views.py neater. We'll call this app "main" for now which will be important for the views.py in the future.
+    </p>
+    <img src ="Stylesheets/Pictures/Stage_12.png" id="imgBefore"> 
+    <p class ="paragraph"> 
+                    Now, let's create forms where we can type in our information. Before we start using Materalize on this page, we have to state 
+                    that this page is an extends header.html. To do this we refer back to urls.py, since the app_name is "main", we state where the file 
+                    we're extending is. In this case since main is pointed in the current directory where all the files are located we just need to state that 
+                    we would like connect to the header.html. To do this we would just state "{% extends 'main/header.html'"%}. From there we can start using Materialize.To avoid 
+                    conflicting with the header.html, we have to override the content for our own forms to show up instead of what appears on header.html. 
+    </p>
+    <p class ="paragraph"> 
+                    Now, let's create forms where we can type in our information. Before we start using Materalize on this page, we have to state 
+                    that this page is an extends header.html. To do this we refer back to urls.py, since the app_name is "main", we state where the file 
+                    we're extending is. In this case since main is pointed in the current directory where all the files are located we just need to state that 
+                    we would like connect to the header.html. To do this we would just state "{% extends 'main/header.html'"%}. From there we can start using Materialize.To avoid 
+                    conflicting with the header.html, we have to override the content for our own forms to show up instead of what appears on header.html. 
+    </p>
+    <img src ="Stylesheets/Pictures/Stage_13.png" id="imgBefore">
+    <p class ="paragraph"> 
+                   Using Materialize, let's create a slider with several images that will hold our products. This is purely cosmetic and will showcase 
+                   the products that are offered to a potential customer. First we have to make a container for the slider called "slider". This will hold 
+                   all the pictures and text we decide to put inside. We then create an unordered list with the class "slides" and every time we want to 
+                   add a new object we have to create a new list it or using the li tag. We're gonna have an images as a background for each slide which will be the product. 
+                   There's a problem however, how will we know what the price is? Thankfully materialize has class called "caption" which will allow us to write on top of an image. 
+                   This allows us to write what the product is called and how much it is. This can be repeated several times so that multiple objects can be shown at a time.  
+    </p>
+    <img src ="Stylesheets/Pictures/Stage_14.png" id="imgBefore">
+    <p class ="paragraph"> 
+                    We still need to intialize the slider using javascript on the same page.
+    </p>
+    <img src ="Stylesheets/Pictures/Stage_15.png" id="imgBefore">
+    <p class ="paragraph"> 
+                    This will result in a slider being create. An example of this is shown here:
+    </p>
+    <div class ='slider'> 
+                    <ul class = 'slides'>
+                        <li>
+                        <img src="https://media.gq-magazine.co.uk/photos/6130be0cf76bbfd308a67c9a/master/w_1920,h_1280,c_limit/White%20tshirts_0002_Brunello%20cucinelli.jpg"> 
+                        <div class="caption center-align black-text">
+                        <h3>White T-shirt</h3>
+                        <h5 class="light  text-lighten-3">$59</h5>
+                        </div>
+                        </li>
+
+                        <li>
+                        <img src="https://www.realmenrealstyle.com/wp-content/uploads/2021/07/mens-jeans.jpg"> 
+                        <div class="caption left-align white-text">
+                        <h3>Jeans</h3>
+                        <h5 class="light  text-lighten-3">$12</h5>
+                        </div>
+                        </li>
+
+                        <li>
+                        <img  src="https://s9.limitedrun.com/images/1449887/forklifttee.png"> 
+                        <div class="caption right-align white-text">
+                        <h3>Forklift Shirt</h3>
+                        <h5 class="light  text-lighten-3">$23</h5>
+                        </div>
+                        </li>
+
+                        <li>
+                        <img src="https://pbs.twimg.com/media/EEB_8U7WsAAW85i.jpg"> 
+                        <div class="caption center-align white-text">
+                        <h3>Women Sandals</h3>
+                        <h5 class="light  text-lighten-3">$99</h5>
+                        </div>
+                        </li>
+                    </ul>
+    </div>
+    <p class ="paragraph"> 
+        From here, Using Materialize, we are able to organize and create forms. Using the "post" method, we will be able to 
+        get information from each input field where it will be processed in view.py. Every input has a unique name which will 
+        help views.py to tell the difference and organize which field is filled correctly.  First we'll create several input fields 
+        where a customer can put their first name, last name, email, address, and city. We'll use Materialize grid to make 
+        the fields nicer looking. 
+    </p>
+    <img src ="Stylesheets/Pictures/Stage_16.png" id="imgBefore">
+    <img src ="Stylesheets/Pictures/Stage_17.png" id="imgBefore">
+    <p class ="paragraph"> 
+        Next we create 2 select fields, one of which is for province while the other one is for credit card type. 
+    </p>
+    <img src ="Stylesheets/Pictures/Stage_18.png" id="imgBefore">
+    <img src ="Stylesheets/Pictures/Stage_19.png" id="imgBefore">
+    <p class ="paragraph"> 
+        Finally the final 2 fields for credit card number and expiry date. We will also create a Purchase button which will be used 
+        for views.py. 
+    </p>
+    <img src ="Stylesheets/Pictures/Stage_20.png" id="imgBefore">
+    <p class ="paragraph"> 
+        From here we go back to urls.py where we can set a path. Here we are mapping between views.py and form.html. Where we will begin processing the information
+        that a customer has given us. we'll create a path from "",views.forms and call it by the name "forms" 
+    </p>
+    <p class ="paragraph"> 
+        Going to views.py, we'll create a function called forms. This function will only work if forms.html has a method with post. Since all the 
+        fields arm in a form which its method is equal to post, we will assign those values to variables we create. Using the names from forms.html, 
+        we are able to use request.POST.get to assign each variable with information that the customers.  
+    </p>
+    <img src ="Stylesheets/Pictures/Stage_21.png" id="imgBefore">
+    <p class ="paragraph"> 
+        However we cannot allow a customer to put in invalid information so we'll add some restrictions to the fields so that 
+        they follow our certain format. First we'll add the restriction that if any of the fields are empty or any of the select 
+        options are not picked then once they press the purchase button, it will return a message saying that a customer has given 
+        invalid information and redirects the page back to itself. This will clear the fields, allow customers to try again. If the flag is 
+        ever true, then the page will redirect back to itself. 
+    </p>
+    <p class ="paragraph"> 
+        From there we'll create 3 variables using the information that was given by a customer. "fullname" takes the variable first and the variable last and turns them into 
+        a concatenated string. This is the same thing with fulladdress converting address and city into strings while getting the value of province and concatenating 
+        them together. Finally we set a price which will be zero for now. 
+    </p>
+    <img src ="Stylesheets/Pictures/Stage_22.png" id="imgBefore">
+    <p class ="paragraph"> 
+        Next, if the customer has typed in an item, then we have to see if the item is valid. We create several if statements 
+        as check to see if the field named "item" has something written inside it and if that string is valid. In the case that the 
+        string is valid, then we assign the associated price to the variable price. We also want to preform checks on the 
+        other fields to see if they are valid. For example: We cannot have a number in the first or last name, so we check every 
+        letter to see if any of them have a digit. If the string contains a digit, then the flag will be set to true which will 
+        redirect the website back to itself and telling the customer that they gave invalid information. We also want to see if the 
+        city string also contains a digit and if it does then we will flag it as "invalid". Then we check if the credit card number is an 
+        integer, turning the flag to be true if it contains a decimal. We set a variable x as a regular expression following the format 
+        two numbers followed by a dash followed by two more number. If x returns false, then the flag will consider it to be false information. 
+        The last line will redirect the page back to forms if they flag is true or if the item is not found in the item field.
+    </p>
+    <img src ="Stylesheets/Pictures/Stage_23.png" id="imgBefore">
+    <p class ="paragraph"> 
+        If everything succeeds, then we redirect the page to another page called "results.html" where it will transfer all the valid information 
+        given to the format that results is set to. Next, we create a html file called "results.html" which will display the information 
+        given, similar to a receipt before confirming your purchase. 
+    </p>
+    <img src ="Stylesheets/Pictures/Stage_24.png" id="imgBefore">
+    <p class ="paragraph"> 
+        From there, we create 2 links in results.html. One of the links will go back to the checkout while the other one goes to "/complete". We
+        define /complete in urls.py. If that button is press then we move complete.html where we post a message as well as a estimated date of arrival. 
+        In this case we set the date of arrival to 3 days after the current date. 
+    </p>
+    <img src ="Stylesheets/Pictures/Stage_25.png" id="imgBefore">
+    <p class ="paragraph"> 
+       With that we finally created our website using Materialize and Django.
+    </p>
+   </article>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.slider').slider();
+    });
+</script>
+
+
+</html>

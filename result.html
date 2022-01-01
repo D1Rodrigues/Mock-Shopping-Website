@@ -1,0 +1,38 @@
+{% extends 'main/header.html' %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col s12 m6">
+      <div class="card blue-grey darken-1" style="align-items:center">
+        <div class="card-content white-text">
+          <span class="card-title">Your Information</span>
+          <p>
+              <ul>
+                    <li>
+                        Purchased Item: {{item}} 
+                    </li>
+                    <li>
+                      Total Price: ${{price}}
+                    </li>
+                    <li>
+                        Name: {{name}}
+                    </li>
+                    <li>
+                        Email: {{email}}
+                    </li>
+                    <li>
+                        Address: {{address}}
+                    </li>
+              </ul>
+          </p>
+        </div>
+        <div class="card-action">
+          <a href="">Go Back</a>
+          <a href="/complete">Complete Purchase</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

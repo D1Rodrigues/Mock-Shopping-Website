@@ -1,0 +1,212 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta name = "viewport" content = "width-device-width, intial-scale = 1.0"> 
+        <meta charset = "UTF-8">
+        <link rel="stylesheet" href = "Stylesheets/TermProj_1.css"> 
+         <script type = "text/javascript" src = "Stylesheets/style.js"></script> 
+        <title> Term Project </title>
+    </head>
+<body>  
+    <header id ="title"> CPS530 Term Project</header>
+    <!-- Navigation bar that adds class "sticky" on current id so that it moves along with the webpage while scrolling. This uses a combination of js and css.-->
+    <!-- Code can be found in Stylesheet/style.js file-->
+    <nav id="navBarCont">
+        <ul class ="ul1"> 
+            <li class ="li1"><a href ="#" class = a1>Home</a></li>
+            <li class ="li1"><a href ="Installation.html" class = a1>Installation</a></li>
+            <li class ="li1"><a href ="Design.html" class = a1>Designing a Page</a></li>
+            <li class ="li1"><a href ="https://finalprojec456.herokuapp.com/" class = a1>Demo Page</a></li>
+            <li class ="li1"><a href ="page-five.html" class = a1>Final Thoughts</a></li>
+            <li class ="li1"><a href ="references.html" class = a1>References</a></li>
+        </ul>
+    </nav>
+
+    <!--  This is the Rest of this page where the articles will be -->
+    <section id = "page">
+        <!-- Slideshow section and images associated with the slide show using javascript-->
+        <section class ="slide-container"> 
+            <!--Installation Slide-->
+            <div class = "slides2"> 
+                <img src="Stylesheets/Pictures/Django.jpg" style="width:100%; max-height:650px;"> 
+                <div class ="overlay" > 
+                    <p class = "overText"> <a href="Installation.html">Framework Setup</a> </p>
+                </div>
+            </div>
+            <!--Designing Webpage Slide-->
+            <div class = "slides2"> 
+                <img src="Stylesheets/Pictures/WebPage.jpg" style="width:100%; max-height:650px;"> 
+                <div class ="overlay" > 
+                    <p class = "overText"> <a href="Design.html">Designing A Page</a> </p>
+                </div>
+            </div>
+            <!--Demo Page Slide-->
+            <div class = "slides2"> 
+                <img src="Stylesheets/Pictures/Demo.png" style="width:100%; max-height:650px;"> 
+                <div class ="overlay" > 
+                    <p class = "overText"> <a href="https://finalprojec456.herokuapp.com/">Demo Page </a> </p>
+                </div>
+            </div>
+            <!--Final Thoughts Slide-->
+            <div class = "slides2"> 
+                <img src="Stylesheets/Pictures/thoughts.jpg" style="width:100%; max-height:650px;"> 
+                <div class ="overlay" > 
+                    <p class = "overText"> <a href="page-five.html">Final Thoughts </a> </p>
+                </div>
+            </div>
+            <!--Reference Slide-->
+            <div class = "slides2"> 
+                <img src="Stylesheets/Pictures/Demo.png" style="width:100%; max-height:650px;"> 
+                <div class ="overlay" > 
+                    <p class = "overText"> <a href="references.html">References</a> </p>
+                </div>
+            </div>
+            <!-- On click go to previous slide -->
+            <a class = "prev" onclick ="slideAdd(-1)">&#10094; </a>
+            <!-- On click move to the next slide -->
+            <a class = "next" onclick ="slideAdd(1)"> &#10095;</a>
+        </section>
+        <!-- Render Slideshow when entering the webpage can be found in Stylesheets/style.js -->
+        <script> showSlides(index); </script>
+
+        <!-- Everything that relates to the articles-->
+        <article class="artsection"> 
+            <p class ="Whatis">Different frameworks for web development</p> 
+            <p class ="sub_Main"> Using Materialize and Django </p> 
+
+            <!--Sets Image as a fixed background-->
+            <div id = "artImg1"> </div>
+           
+            <p class ="Whatis">What is Materialize?</p>
+            <p class ="sub_Main"> Modern,Responsive and Simplistic at its finest</p>
+            <hr class ="line">
+            <!--Sets Image as a fixed background-->
+            <div id="artImg2"> </div>
+
+            <p class = "paragraph"> Materialize is a responsive, open source CSS framework based on Material Design by Google. It is 
+                designed to offer slick and stylish designs with ease. It is a UX framework that how different aspects and elements appear
+                and behave on a web page. Materialize comes with a CSS and JavaScript framework as well as several different components and icons. 
+                Materialize uses a 12 column grid for easy to plan page layout and design. Materialize also has a similar alternative called SASS 
+                that is closely related to Materialize and easy to understand. If you are using some sort of android device, there is a possibility 
+                that it using materialize. 
+            </p>
+            <p class = "paragraph"> Design is made simple with Materialize. Since the Materialize framework incorporates CSS and Javascript, several
+                effects can be easily acheived. Without Materialize, creating and implementing animations, transistions and effects take several lines of 
+                code to accomplish. On top of that, it requires not only proper timing but sometimes intimate understanding of both Java Script and CSS. 
+                Materialize simplifies all of that. When creating a slideshow with Javascript, it could total up to 5-15 lines of Javascript code just to create the 
+                container the pictures are sitting in whereas Materialize only requires one "div" class to create. Materialize also include several built-in icons 
+                and forms that are compatible with all modern browsers. Since Materialize is a framework that incorporates CSS 
+                and Javascript, it drastically cuts down the time needed to create and design a web page.
+            </p>
+            <figure> 
+            <img src ="Stylesheets/Pictures/Before.png" id="imgBefore"> 
+                <figcaption class = 'caption'> Current Web Page Without Materialize</figcaption>
+            </figure>
+            <p class = "paragraph"> However, despite its ease of use and versatile design, Materialize is far from perfect.
+                Being a relatively new framework, Materialize is not compatible with some older browsers such as Safari 8 and 
+                almost all Internet Explorer browsers besides edge. This can be a problem for users who are dedicated to using an older browser. 
+                If you are one of those people, I recommend that you abstain from using this Framwork. Materialize, like any framework, restricts some 
+                control over the design and layout of a page. While Materialize is versatile and will save developers time on creating and designing a web page, 
+                its versatility pales in comparison to some other frameworks or even pure CSS/Javascript. This is not to say that the built-in components are 
+                don't give you choices but if you want better control over every little detail of your web page, I suggest using a different framework 
+                or using Pure CSS/Javascript. 
+            </p>
+            <table class = "DnATable"> 
+                <tr>
+                    <td> 
+                    <p class = "sub_Main">Advantages of Materialize</p>
+                    </td>
+                    <td> 
+                        <p class = "sub_Main">Disadvantages of Materialize</p>
+                    </td>
+                </tr> 
+                <tr>
+                    <td class="td2"> 
+                    <ul> 
+                        <li> Easy and Simple to Code </li>
+                        <li> Compatible with all modern web browsers</li>
+                        <li> Open-source makes it versatile </li>
+                        <li> Includes easy to implement effects</li>
+                        <li> Includes easy to implement animations</li>
+                        <li> Includes easy to implement icons</li>
+                        <li> Detailed and Simple Documentation</li>
+                        <li> Reponsive </li>
+                    </ul>
+                    </td>
+                    <td> 
+                        <ul> 
+                            <li> Does not support older browsers </li>
+                            <li> Heavy and could be a bit slow at times </li>
+                            <li> Like any framework, limits control </li>
+                        </ul>
+                    </td>
+                </tr> 
+            </table>
+
+            <br> 
+            <br> 
+
+            <p class ="Whatis">What is Django?</p>
+            <p class ="sub_Main">A python based framework </p>
+            <hr class ="line">
+            <!--Sets Image as a fixed background-->
+            <div id="artImg3"> </div>
+            <p class = "paragraph"> Django is high-level Python based framework intially released in 2005. It is a primarily a 
+                back-end framework that focuses on security and maintainability. Like any framework, it comes with several functions 
+                and packages that can be used without prior coding required. Some of the functionalities include: Built-in User authenication, Admin interfacing 
+                , Database migration, URL routing, etc. Since Django is a python based framework, the readability of code and 
+                syntax python is known for, benefits developers attempting to learn Django. Along with python's versatility, this allows
+                Django to be diverse and flexible while also being secure and easy to read. 
+            </p>
+            <p class = "paragraph"> However there are some downside when using Django. Unlike other frameworks, everything in Django has to be explicitly defined. 
+                This means before any functions can be implement, every little thing must be defined. This leads to web pages taking longer to develop as well as 
+                confusion for developers who are not used to defining everything as opposed to other frameworks. Django design also does not allow for developers to 
+                change file heirarchy and order. Also readability does not equal difficulty.Though Django is based in python and easy to read once a developer understands 
+                Django, the intial learning curve can be steep for some people. The way that Django is structured causes difficulty for many developers learning the language. 
+                Though once a devloper gets through the intial curve, it is relatively easier to understand and read the code from there.
+            </p>
+            <table class = "DnATable"> 
+                <tr>
+                    <td> 
+                    <p class = "sub_Main">Advantages of Django</p>
+                    </td>
+                    <td> 
+                        <p class = "sub_Main">Disadvantages of Django</p>
+                    </td>
+                </tr> 
+                <tr>
+                    <td class="td2"> 
+                    <ul> 
+                        <li> Readability </li>
+                        <li> Easy to understand syntax</li>
+                        <li> Great Documentation </li>
+                        <li> Inludes several built-in features</li>
+                        <li> Good for machine learning</li>
+                        <li> Builds on top of python</li>
+                        <li> Secure </li>
+                        <li> Versatile and Scalable</li>
+                        <li> Flexible </li>
+                    </ul>
+                    </td>
+                    <td> 
+                        <ul> 
+                            <li> Everything must be defined </li>
+                            <li> Steep learning curve  </li>
+                            <li> Monolithic in nature </li>
+                        </ul>
+                    </td>
+                </tr> 
+            </table>
+
+        </article>
+        
+    </section>
+
+
+    <!--The black box at the bottom of the screen-->
+    <div id = "bottomBox"></div>
+  
+  
+</body>
+
+</html>

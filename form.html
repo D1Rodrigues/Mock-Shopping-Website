@@ -1,0 +1,155 @@
+{% extends 'main/header.html' %}
+
+{% block content %}
+
+
+<div class="slider">
+  <ul class="slides">
+    <li>
+      <img src="https://media.gq-magazine.co.uk/photos/6130be0cf76bbfd308a67c9a/master/w_1920,h_1280,c_limit/White%20tshirts_0002_Brunello%20cucinelli.jpg"> 
+      <div class="caption center-align black-text">
+        <h3>White T-shirt</h3>
+        <h5 class="light  text-lighten-3">$59</h5>
+      </div>
+    </li>
+    <li>
+      <img src="https://www.realmenrealstyle.com/wp-content/uploads/2021/07/mens-jeans.jpg"> 
+      <div class="caption left-align white-text">
+        <h3>Jeans</h3>
+        <h5 class="light  text-lighten-3">$12</h5>
+      </div>
+    </li>
+    <li>
+      <img  src="https://s9.limitedrun.com/images/1449887/forklifttee.png"> 
+      <div class="caption right-align white-text">
+        <h3>Forklift Shirt</h3>
+        <h5 class="light  text-lighten-3">$23</h5>
+      </div>
+    </li>
+    <li>
+      <img src="https://pbs.twimg.com/media/EEB_8U7WsAAW85i.jpg"> 
+      <div class="caption center-align white-text">
+        <h3>Women Sandals</h3>
+        <h5 class="light  text-lighten-3">$99</h5>
+      </div>
+    </li>
+  </ul>
+</div>
+
+
+<div class="row">
+    <form class="col s12" method="post">
+    {%csrf_token%}
+
+      <div class="row">
+        <div class="input-field col s6">
+          <input  id="first_name" type="text" class="validate" name="item">
+          <label for="first_name">Item</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="first_name" type="text" class="validate" name="firstname">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate" name="lastname"> 
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate" name="email">
+          <label for="email">Email</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate" name="address"> 
+          <label for="last_name">Street Address</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate" name="city"> 
+          <label for="last_name">City</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <select name="province">
+            <option value="" disabled selected>province</option>
+            <option value="ON">ON</option>
+            <option value="BC">BC</option>
+            <option value="NL">NL</option>
+            <option value="PE">PE</option>
+            <option value="NS">NS</option>
+            <option value="NB">NB</option>
+            <option value="QC">QC</option>
+            <option value="MB">MB</option>
+            <option value="SK">SK</option>
+            <option value="AB">AB</option>
+            <option value="YT">YT</option>
+            <option value="NT">NT</option>
+            <option value="NU">NU</option>
+          </select>
+          <label>Select Province</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <select name="cardtype">
+            <option value="" disabled selected>Choose your card type</option>
+            <option value="1">Visa</option>
+            <option value="2">MasterCard</option>
+            <option value="3">Amex</option>
+           
+          </select>
+          <label>Card type</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Card Number" id="first_name" type="text" class="validate" name="cardnum">
+          <label for="first_name">Card Number</label>
+        </div>
+        <div class="input-field col s6">
+          <input placeholder="ex: 06/23" id="last_name" type="text" class="validate" name="expirydate"> 
+          <label for="last_name">Expiry Date</label>
+        </div>
+      </div>
+
+      <button class="btn waves-effect waves-light" type="submit" name="action">Purchase
+        <i class="material-icons right">local_grocery_store</i>
+      </button>
+    </form>
+  </div>
+
+  <script>
+  var options={};
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('select');
+    var instances = M.FormSelect.init(elems, options);
+  });
+  </script>
+  <script>
+    var options={};
+     document.addEventListener('DOMContentLoaded', function() {
+     var elems = document.querySelectorAll('.slider');
+     var instances = M.Slider.init(elems, options);
+      });
+  </script>
+  <script> 
+    $(document).ready(function(){
+      $('.slider').slider();
+    });
+  </script>     
+
+{% endblock %}
